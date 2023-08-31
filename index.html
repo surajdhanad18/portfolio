@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --theme: coral;
+        }
+
+        .hero {
+            height: 90vh;
+            background-image: url(assets/images/bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            position: relative;
+        }
+
+        .name {
+            width: 50%;
+            color: white;
+            position: absolute;
+            top: 70px;
+            left: 150px;
+        }
+
+        .name h1 {
+            font-size: 60px;
+        }
+
+        .name p {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.461);
+        }
+
+        .navbar {
+            height: 10vh;
+            display: flex;
+            background-color: var(--theme);
+            justify-content: space-around;
+            font-size: 18px;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navbar-a {
+            color: blue
+        }
+
+        .imgs {
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 90vh;
+        }
+
+        .johnimg {
+            height: 100%;
+            margin-left: 45%;
+        }
+
+        .hire-me {
+            border: 2px solid var(--theme);
+            margin-top: 20px;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: var(--theme);
+            font-size: 20px;
+            padding: 6px;
+            border-radius: 4px;
+        }
+
+        .hire-me:hover {
+            background-color: var(--theme);
+            color: white;
+        }
+
+        .skills {
+            /* height: 200px;
+            background-color: var(--theme); */
+            width: 80%;
+            margin: 2rem auto 0px;
+            display: flex;
+            gap: 3rem;
+        }
+
+        .progress {
+            background-color: gray;
+            height: 2rem;
+            margin: 2rem 0;
+        }
+
+        .progress-bar {
+            background-color: var(--theme);
+            height: 2rem;
+            /* width: 45%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .frontend {
+            width: 50%;
+        }
+
+        .backend {
+            width: 50%;
+        }
+
+        .html {
+            width: 80%;
+
+        }
+
+        .css {
+            width: 60%;
+        }
+
+        .projects {
+            width: 80%;
+            margin: 2rem auto;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .card {
+            border: 2px solid var(--theme);
+            width: 25%;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        .card-body {
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="name">
+            <h1>Hi My name Is John</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur molestiae,
+                consequatur eveniet odio eum nulla, commodi quidem tempora illo nihil voluptas provident
+                voluptate. Est
+                odit aspernatur ad dolorum in. Tempora cupiditate adipisci ullam repudiandae?
+            </p>
+            <a href="">
+                <div class="hire-me">Hire me</div>
+            </a>
+        </div>
+        <div class="imgs">
+            <img src="assets/images/user.png" class="johnimg">
+        </div>
+    </div>
+    <div class="navbar">
+        <a class="navbar-a" href="">John</a>
+        <a class="navbar-a" href="">Home</a>
+        <a class="navbar-a" href="">Education</a>
+        <a class="navbar-a" href="">Projects</a>
+        <a class="navbar-a" href="">Experience</a>
+        <a class="navbar-a" href="">Contect</a>
+
+    </div>
+
+    <div class="skills">
+        <div class="frontend">
+            <div class="progress">
+                <div class="progress-bar html">HTML</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">CSS</div>
+            </div>
+        </div>
+
+        <div class="backend">
+            <div class="progress">
+                <div class="progress-bar html">HTML</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">CSS</div>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="card">
+            <img src="https://media.4rgos.it/i/Argos/3319-m0014-m007-m050-asym-m008-m022-laptop-guide-248175189-hero?w=600&bg=rgb(255,255,255)&poi={$this.metadata.pointOfInterest.x},{$this.metadata.pointOfInterest.y},{$this.metadata.pointOfInterest.w},{$this.metadata.pointOfInterest.h}&scaleFit={($this.metadata.pointOfInterest.x%3E0)?$sfpoi:$sfcenter}&sm=aspect&aspect=3:2&sfcenter=center&sfpoi=poi&qlt=75&fmt.jpeg.interlaced=true"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://media.4rgos.it/i/Argos/3319-m0014-m007-m050-asym-m008-m022-laptop-guide-248175189-hero?w=600&bg=rgb(255,255,255)&poi={$this.metadata.pointOfInterest.x},{$this.metadata.pointOfInterest.y},{$this.metadata.pointOfInterest.w},{$this.metadata.pointOfInterest.h}&scaleFit={($this.metadata.pointOfInterest.x%3E0)?$sfpoi:$sfcenter}&sm=aspect&aspect=3:2&sfcenter=center&sfpoi=poi&qlt=75&fmt.jpeg.interlaced=true"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://media.4rgos.it/i/Argos/3319-m0014-m007-m050-asym-m008-m022-laptop-guide-248175189-hero?w=600&bg=rgb(255,255,255)&poi={$this.metadata.pointOfInterest.x},{$this.metadata.pointOfInterest.y},{$this.metadata.pointOfInterest.w},{$this.metadata.pointOfInterest.h}&scaleFit={($this.metadata.pointOfInterest.x%3E0)?$sfpoi:$sfcenter}&sm=aspect&aspect=3:2&sfcenter=center&sfpoi=poi&qlt=75&fmt.jpeg.interlaced=true"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://media.4rgos.it/i/Argos/3319-m0014-m007-m050-asym-m008-m022-laptop-guide-248175189-hero?w=600&bg=rgb(255,255,255)&poi={$this.metadata.pointOfInterest.x},{$this.metadata.pointOfInterest.y},{$this.metadata.pointOfInterest.w},{$this.metadata.pointOfInterest.h}&scaleFit={($this.metadata.pointOfInterest.x%3E0)?$sfpoi:$sfcenter}&sm=aspect&aspect=3:2&sfcenter=center&sfpoi=poi&qlt=75&fmt.jpeg.interlaced=true"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
